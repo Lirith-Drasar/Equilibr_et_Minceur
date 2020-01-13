@@ -14,8 +14,7 @@ class IndexController extends AbstractController
     /**
      * @Route("/", name="index")
      */
-    public function index(
-        ContentRepository $contentRepository, Request $request):Response {
+    public function index(ContentRepository $contentRepository, Request $request):Response {
 
             $presentation = $contentRepository->findBy(
             ['category' => 'presentation'],
