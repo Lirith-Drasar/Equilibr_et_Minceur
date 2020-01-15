@@ -25,4 +25,15 @@
             </div>
         </div>
     </section>
+    <section id="ancre_service" class="service-section">
+        <h2 class="services_title">Ce que je peux faire pour vous</h2>
+        <div class="cards-container">
+            {% for service in services %}
+                <div class="service-card">
+                    <h1 class="service-title">{{service.title}}</h1>
+                    <p class="service-detail">{{service.paragraph}}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
 {% endblock %}
