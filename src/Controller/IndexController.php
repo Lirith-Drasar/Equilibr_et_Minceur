@@ -2,8 +2,11 @@
 
 namespace App\Controller;
 
+
 use App\Entity\Content;
+use App\Entity\Service;
 use App\Repository\ContentRepository;
+use App\Repository\ServiceRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -14,14 +17,16 @@ class IndexController extends AbstractController
     /**
      * @Route("/", name="index")
      */
-    public function index(ContentRepository $contentRepository, Request $request):Response {
+    public function index(ContentRepository $contentRepository, ServiceRepository $serviceRepository, Request $request):Response {
 
-            $presentation = $contentRepository->findBy(
+        $services = $serviceRepository->findAll();
+        $presentation = $contentRepository->findBy(
             ['category' => 'presentation'],
             ['ordering' => 'ASC']
             );
         return $this->render('index/index.html.twig', [
             'presentations' => $presentation,
+            'services' => $services,
         ]);
     }
 }
