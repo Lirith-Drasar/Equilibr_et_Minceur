@@ -7,6 +7,7 @@ use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 
 
+
 class ServiceFixture extends Fixture
 {
     public function load(ObjectManager $manager)
