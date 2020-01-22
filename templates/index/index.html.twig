@@ -31,7 +31,19 @@
                 <div class="service-card">
                     <h1 class="service-title">{{service.title}}</h1>
                     <p class="service-detail">{{service.paragraph}}</p>
-                    <img class="presentation_img"{{service.image}}">
+                    <img class="presentation_img"{{service.image}}>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section id="ancre_produit" class="service-section">
+        <h2 class="produit_title">Mes produits</h2>
+        <div class="cards-container">
+            {% for produit in produit %}
+                <div class="produit-card">
+                    <h1 class="produit_title">{{produit.nom}}</h1>
+                    <p class="produit-detail">{{produit.description}}</p>    
                 </div>
             {% endfor %}
         </div>
