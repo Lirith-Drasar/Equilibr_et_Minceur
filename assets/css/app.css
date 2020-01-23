@@ -3,8 +3,7 @@
 .presentation_section{
     display: flex;
     color: white;
-    background-color: rgba(100, 250, 0, 0.9);
-    opacity: 0.5;
+    background-color: #a7f169ee;
     padding-top: 0rem;
     padding-bottom: 0rem;
 }
@@ -49,7 +48,7 @@
 }
 
 .services_title{
-    color: #327843;
+    color: #811785;
     font-family: 'Rufina', serif;
     text-align: center;
     font-size: 2rem;
