@@ -1,0 +1,81 @@
+/* Css service d'Equilibr'& Minceur */
+
+.service-section {
+    background-color: #ffffee;
+    display: flex;
+    flex-wrap:wrap;
+    color: white;
+}
+
+.services_title{
+    color: #811785;
+    font-family: 'Rufina', serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.service-card{
+    display:flex;
+    flex-direction: column;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 2px #327843;
+    text-shadow: 2px 2px 4px rgb(13, 39, 3);
+}
+
+.service-title{
+    font-family: 'Rufina', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;;
+}
+
+.service-detail{
+    font-family: 'Alice', serif;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Format destock */
+
+@media screen and (min-width:769px){
+
+    /* Css service d'Equilibr'& Minceur */
+    
+    .service-section{
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+    }
+
+    .services_title{
+        font-size: 4rem;
+        margin:3rem;
+    }
+
+    .cards-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .service-card{
+        display:flex;
+        flex-direction: column;
+        width:30%;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background-color: #a7f169ee;
+
+    }
+
+    .service-title{
+        font-size: 2.3rem;
+    }
+
+    .service-detail{
+        font-size: 1.5rem;
+    }
+}

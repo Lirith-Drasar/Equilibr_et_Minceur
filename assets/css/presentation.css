@@ -1,0 +1,77 @@
+/* Css présentation d'Equilibr'& Minceur */
+
+.presentation_section{
+    display: flex;
+    color: white;
+    background-color: #a7f169ee;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-top: 2rem;
+}
+
+.presentation_part{
+    font-family: 'Rufina', serif;
+    text-align : center;
+    margin: 2rem;
+}
+
+.presentations{
+    margin: 1rem;
+}
+
+.presentation_title{
+    font-size: 2rem;
+    color: #811785;
+}
+
+.presentation_subtitle{
+    text-shadow: 2px 2px 4px rgb(13, 39, 3);
+}
+
+
+.presentation_paragraph{
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px rgb(13, 39, 3);
+}
+
+.presentation_img{
+    max-width:5%;
+    max-height:5%;
+    margin-right: 2%;
+}
+
+
+
+/* Format destock */
+
+@media screen and (min-width:769px){
+
+    /* Css présentation d'Equilibr'& Minceur */
+
+    .presentation_detail{
+        display: flex;
+    }
+
+
+    .presentation_title{
+        font-size: 4rem;
+        color: #811785;
+    }
+
+    .presentation_subtitle{
+        font-size: 1.8rem;
+    }
+
+    .presentation_paragraph{
+        font-size: 1.5rem;
+    }
+
+    .presentation_img{
+        object-fit: cover;
+    }
+
+    .presentation_part{
+        width:100%;
+    }
+
+}
