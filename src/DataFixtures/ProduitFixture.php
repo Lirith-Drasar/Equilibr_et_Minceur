@@ -12,6 +12,8 @@ class ProduitFixture extends Fixture
     {
         $produit1 = new Produit();
         $produit1->setNom('Nom du produit');
+        $produit1->setImage('aloevera.jpeg');
+        $produit1->setPrix(19.00);
         $produit1->setDescription('Description du produit et prix si besoin');
         $manager->persist($produit1);
 

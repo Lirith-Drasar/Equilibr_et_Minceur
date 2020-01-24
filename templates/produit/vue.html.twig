@@ -9,6 +9,8 @@
             {% for produit in produit %}
                 <div class="produit-card">
                     <h2 class="produit_subtitle">{{produit.nom}}</h2>
+                    <p class="produit-detail">{{produit.image}}</p>    
+                    <p class="produit-detail">{{produit.prix}}</p>    
                     <p class="produit-detail">{{produit.description}}</p>    
                 </div>
             {% endfor %}
