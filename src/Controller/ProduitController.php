@@ -16,9 +16,20 @@ use Symfony\Component\Routing\Annotation\Route;
 class ProduitController extends AbstractController
 {
     /**
-     * @Route("/", name="produit_index", methods={"GET"})
+     * @Route("/", name="produit_vue", methods={"GET"})
      */
     public function index(ProduitRepository $produitRepository): Response
+    {
+        $produit = $produitRepository->findAll();
+        return $this->render('produit/vue.html.twig', [
+            'produit' => $produit,
+        ]);
+    }
+
+    /**
+     * @Route("/admin", name="produit_admin", methods={"GET"})
+     */
+    public function admin(ProduitRepository $produitRepository): Response
     {
         $produit = $produitRepository->findAll();
         return $this->render('produit/index.html.twig', [
