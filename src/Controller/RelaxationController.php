@@ -16,9 +16,19 @@ use Symfony\Component\Routing\Annotation\Route;
 class RelaxationController extends AbstractController
 {
     /**
-     * @Route("/", name="relaxation_index", methods={"GET"})
+     * @Route("/", name="relaxation_vue", methods={"GET"})
      */
     public function index(RelaxationRepository $relaxationRepository): Response
+    {
+        return $this->render('relaxation/wiewcustomer.html.twig', [
+            'relaxations' => $relaxationRepository->findAll(),
+        ]);
+    }
+
+        /**
+     * @Route("/admin", name="relaxation_admin", methods={"GET"})
+     */
+    public function admin(RelaxationRepository $relaxationRepository): Response
     {
         return $this->render('relaxation/index.html.twig', [
             'relaxations' => $relaxationRepository->findAll(),
