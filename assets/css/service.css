@@ -1,23 +1,23 @@
 /* Css service d'Equilibr'& Minceur */
 
 .service-section {
-    background-color: #ffffee;
     display: flex;
     flex-wrap:wrap;
     color: white;
+    margin: 2rem;
 }
 
 .services_title{
     color: #811785;
     text-shadow: 0 1px 0 #eee,
-    0 2px 0 #e5e5e5,
-    -1px 3px 0 #C8C8C8,
-    -1px 4px 0 #C1C1C1,
-    -2px 5px 0 #B9B9B9,
-    -2px 6px 0 #B2B2B2,
-    -2px 7px 2px rgba(0,0,0, 0.6),
-    -2px 7px 8px rgba(0,0,0, 0.2),
-    -2px 7px 45px rgba(0,0,0, 0.4);   
+        0 2px 0 #e5e5e5,
+        -1px 3px 0 #C8C8C8,
+        -1px 4px 0 #C1C1C1,
+        -2px 5px 0 #B9B9B9,
+        -2px 6px 0 #B2B2B2,
+        -2px 7px 2px rgba(0,0,0, 0.6),
+        -2px 7px 8px rgba(0,0,0, 0.2),
+        -2px 7px 45px rgba(0,0,0, 0.4);   
     font-family: 'Rufina', serif;
     text-align: center;
     font-size: 2rem;
@@ -29,6 +29,8 @@
     border-bottom-right-radius: 10px;
     box-shadow: 2px 2px 2px #327843;
     text-shadow: 2px 2px 4px rgb(13, 39, 3);
+    margin-top: 1rem;
+
 }
 
 .service-title{
@@ -36,7 +38,7 @@
     font-size: 1.5rem;
     text-align: center;
     margin: auto;
-    margin-bottom: 1rem;;
+    margin: 1rem;
 }
 
 .service-detail{
@@ -59,7 +61,7 @@
 
     .services_title{
         font-size: 4rem;
-        margin:3rem;
+        margin-bottom:3rem;
     }
 
     .cards-container{
@@ -76,12 +78,12 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
         padding: 1rem;
-        background-color: #a7f169ee;
-
     }
 
     .service-title{
         font-size: 2.3rem;
+        margin-top: 3rem;
+
     }
 
     .service-detail{
