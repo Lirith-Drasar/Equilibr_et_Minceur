@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Prestation relaxation{% endblock %}
+
+{% block body %}
+ <section id="ancre_relaxation" class="relaxation_section">
+        <h1 class="relaxation_title">Mes prestations</h1>
+        <div class="cards-container">
+            {% for relaxation in relaxations %}
+                <div class="relaxation_card">
+                    <h2 class="relaxation_title">{{relaxation.name}}</h2>  
+                    <p class="relaxation_text">{{relaxation.description}}</p>    
+                    <p class="relaxation_price">{{relaxation.price}}</p>    
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

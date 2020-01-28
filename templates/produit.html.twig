@@ -1,0 +1,10 @@
+<section id="ancre_service" class="service-section">
+        <h2 class="produit_title">Mes produits</h2>
+        <div class="cards-container">
+            {% for produit in produit %}
+                <div class="produit-card">
+                    <h1 class="produit-title">{{produit.nom}}</h1>
+                    <p class="produit-detail">{{produit.description}}</p>                </div>
+            {% endfor %}
+        </div>
+    </section>

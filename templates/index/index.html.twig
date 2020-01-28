@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Equilibr'& Minceur{% endblock %}
+
+{% block body %}
+
+    <!-- Présentation d'équilibr' & Minceur -->
+    <section class="presentation_section">
+        <div class="presentation_detail">
+            <div class="presentations">
+                {% for presentation in presentations %}
+                    <div class="presentation_part">
+                        {% if presentation.type == 'title' %}
+                        <h2 class="presentation_title">{{ presentation.value }}</h2>
+                        {% endif %}
+                        {% if presentation.type == 'subtitle' %}
+                        <h3 class="presentation_subtitle">{{ presentation.value }}</h3>
+                        {% endif %}
+                        {% if presentation.type == 'paragraph' %}
+                        <p class="presentation_paragraph">{{ presentation.value }}</p>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section id="ancre_service" class="service-section">
+        <h2 class="services_title">Ce que je peux faire pour vous</h2>
+        <div class="cards-container">
+            {% for service in services %}
+                <div class="service-card">
+                    <h1 class="service-title">{{service.title}}</h1>
+                    <p class="service-detail">{{service.paragraph}}</p>
+                    <img class="presentation_img"{{service.image}}>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+{% endblock %}
